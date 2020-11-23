@@ -24,6 +24,11 @@ class ViewController: UITableViewController {
     }
     
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateInitialViewController() as? DetailViewController
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
